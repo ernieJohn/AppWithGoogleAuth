@@ -11,7 +11,8 @@
                             <div class="alert alert-success" role="alert">
                                 Two Factor Authentication has been disabled.
                             </div>
-                        @else
+                        @endif
+                        @if (session('status') == 'two-factor-authentication-enabled')
                             <div class="alert alert-success" role="alert">
                                 Two Factor Authentication has been enabled.
                             </div>
